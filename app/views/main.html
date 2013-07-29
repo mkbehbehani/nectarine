@@ -1,7 +1,11 @@
-<div class="hero-unit">
-  <h1>Hello!</h1>
-  
-</div>
+
+<div class="span12" id="main">
+<h1>Hello!</h1>
 <ul ng-controller="MainCtrl">
-  	<li ng-repeat="item in items">{{item.name}}: {{item.desc}}</li>
+  	<li ng-repeat="item in items">{{item.desc}}</li>
 </ul>
+
+<form id="item-form" ng-submit="addItem()">
+	<input id="new-item" placeholder="Add item!" ng-model="newItem" autofocus>
+</form>
+</div>
