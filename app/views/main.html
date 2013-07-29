@@ -1,9 +1,11 @@
 
-<div class="span12" id="main">
+<div class="span12" id="main" ng-controller="MainCtrl">
 <h1>Nectarine!</h1>
-<ul ng-controller="MainCtrl">
-  	<li ng-repeat="item in items">{{item.desc}}</li>
-</ul>
+
+  	<div ng-repeat="item in items" ng-animate="'highlight'">
+  		{{item.desc}}
+  	</div>
+
 
 <form id="item-form" ng-submit="addItem()">
 	<input id="new-item" placeholder="Add something!" ng-model="newItem" autofocus>

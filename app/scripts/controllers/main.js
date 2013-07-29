@@ -4,7 +4,7 @@ angular.module('nectarineApp')
   .controller('MainCtrl', function ($scope, angularFire){
     var url = 'https://nectarine.firebaseio.com/items';
 	var promise = angularFire(url, $scope, 'items', []);
-
+	$scope.items = promise
     promise.then(function() {
 
 	  $scope.removeItem = function() {
