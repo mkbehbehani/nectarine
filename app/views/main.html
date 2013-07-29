@@ -1,4 +1,7 @@
 <div class="hero-unit">
   <h1>Hello!</h1>
-
+  
 </div>
+<ul ng-controller="MainCtrl">
+  	<li ng-repeat="item in items">{{item.name}}: {{item.desc}}</li>
+</ul>
