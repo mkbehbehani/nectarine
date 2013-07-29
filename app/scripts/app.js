@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nectarineApp', [])
+angular.module('nectarineApp', ['firebase'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
