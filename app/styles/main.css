@@ -24,6 +24,7 @@ h1{
     letter-spacing: -1px;
 }
 #counter{
+    margin-top: 2em;
  margin-bottom:1em;
  color: #ff4900;
  height: 10em;
