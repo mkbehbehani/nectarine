@@ -23,13 +23,24 @@ h1{
     line-height: 1;
     letter-spacing: -1px;
 }
+#counter{
+ margin-bottom:1em;
+ color: #ff4900;
+ height: 10em;
+ line-height: 4em;
+}
+.content{
+    position: absolute;
+    top: 10em;
+}
 #main{
+
     margin-left: auto;
     margin-right: auto;
     
 
 }
-#main div{
+#main .itemlist{
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     margin-top: 1em;
@@ -229,4 +240,57 @@ h1{
     -moz-animation-name: bounceOutRight;
     -o-animation-name: bounceOutRight;
     animation-name: bounceOutRight;
+}
+.is-animated {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  padding: 0;
+  position: relative;
+
+}
+.is-animated span {
+  display: block;
+  width: 100px;
+}
+.property {
+  font-size: 300%;
+  padding: none;
+  border-right: 2px solid #000;
+  width: 0;
+  overflow: hidden;
+  float: left;
+  -webkit-animation-name: expandProperty;
+  -webkit-animation-delay: .3s;
+  -webkit-animation-duration: .8s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+}
+.value {
+padding-left: 0.3em;
+  font-size: 300%;
+  float: left;
+  overflow: hidden;
+}
+.value span {
+  margin-left: -40%;
+  -webkit-animation-name: expandValue;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes expandProperty {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 130px;
+  }
+}
+@-webkit-keyframes expandValue {
+  from {
+    margin-left: -130px;
+  }
+  to {
+    margin-left: 0;
+  }
 }

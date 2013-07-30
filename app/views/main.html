@@ -1,13 +1,28 @@
 
 <div class="span12" id="main" ng-controller="MainCtrl">
-<h1>Nectarine!</h1>
-<form id="item-form" ng-submit="addItem()">
-	<input id="new-item" placeholder="Add something!" ng-model="newItem" autofocus>
-</form>
-  	<div ng-repeat="item in items  | orderBy:'-created_at' " ng-animate="'highlight'">
-  		{{item.desc}}
-  	</div>
+	<h1>Nectarine! </h1>
+
+	<div class="container" id="counter">
+		  <div class="property is-animated">
+		    <span>Posts</span>
+		  </div>
+		  <div class="value is-animated">
+		    <span>{{items.length}}</span>
+		  </div>
+	</div>
 
 
+	<div class="content">
+		<form id="item-form" ng-submit="addItem()">
+			<input id="new-item" placeholder="Add something!" ng-model="newItem" autofocus>
+		</form>
+		
+		
+	  	<div class="itemlist" ng-repeat="item in items  | orderBy:'-created_at' " ng-animate="'highlight'">
+
+	  		{{item.desc}}
+	  	</div>
+
+	</div>
 
 </div>
