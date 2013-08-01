@@ -3,7 +3,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
 }
-h1{
+h1, h2{
     color: #ff4900;
 
 }
@@ -27,7 +27,6 @@ h1{
     margin-top: 2em;
  margin-bottom:1em;
  color: #ff4900;
- height: 10em;
  line-height: 4em;
 }
 
@@ -38,20 +37,21 @@ h1{
     
 
 }
-#main .itemlist{
+.itemlist{
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     margin-top: 1em;
     padding: 1em;
     font-size: 1.5em;
     list-style-type: none;
+    width: 100%;
 }
 #new-item{
     margin-top: 1em;
     
     line-height: 2em;
     font-size: 2em;
-    width: 31.3em;
+    width: inherit;
     padding-left: 0.3em
 }
 .highlight-enter {
