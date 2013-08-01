@@ -1,25 +1,23 @@
-<div class="row-fluid">
-  <div class="span9" id="main">
-    <h1>Nectarine!</h1>
-    <div class="row-fluid">
-      <div class="span6">
-      	<h1>Recent Code Pushes to the {{repo}} repository</h1>
-        <gh-visualization val="data"></gh-visualization>
-      </div>
-      <div class="span6">
-            <form id="item-form" ng-submit="addItem()">
-					<input id="new-item" placeholder="Add something!" ng-model="newItem" autofocus>
-			</form>
-				
-			<div class="itemlist" ng-repeat="item in items  | orderBy:'-created_at' " ng-animate="'highlight'">
-            {{item.desc}}
-			</div>
 
-			
-	  </div>
-    </div>
-  </div> <!-- !span12 -->
+
+<div class="row">
+  <div class="col-lg-6">
+  	<h1>Nectarine!</h1>
+  	<h1>Recent Code Pushes to the {{repo}} repository</h1>
+    <gh-visualization val="data"></gh-visualization>
+  </div>
+  <div class="col-lg-6">
+  	<form id="item-form" ng-submit="addItem()">
+		<input id="new-item" placeholder="Add something!" ng-model="newItem" autofocus>
+	</form>
+				
+	<div class="itemlist" ng-repeat="item in items  | orderBy:'-created_at' " ng-animate="'highlight'">
+        {{item.desc}}
+	</div>
+  </div>
 </div>
+
+
 
 
 
