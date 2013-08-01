@@ -23,7 +23,10 @@
 			    <span>{{items.length}}</span>
 			  </div>
 		</div>
-
+	  <div id="spin"></div>
+	  <input class="hidden" type="file" accept="image/*" capture="camera" id="file-upload">
+	  <br/>
+	  <img class="pano" id="pano" />
   	<form id="item-form" ng-submit="addItem()">
 		<input id="new-item" placeholder="Add something!" ng-model="newItem" autofocus>
 	</form>
