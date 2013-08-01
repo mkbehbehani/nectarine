@@ -7,13 +7,14 @@
 	<form ng-submit="getCommitData()" id="select_repo">
 	    <p class="error">{{error}}</p>
 	    User: <input ng-model="user"></input>
+	    <br>
 	    Repo: <input ng-model="repo"></input>
 	    <input type="submit" value="Go!">
 	    
 	</form>
 
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6" id="postcontainer">
   	<div class="container" id="counter">
 			  <div class="property is-animated">
 			    <span>Posts</span>

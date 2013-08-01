@@ -39,7 +39,7 @@ h1, h2{
     margin-top: 2em;
  margin-bottom:1em;
  color: #ff4900;
- line-height: 4em;
+ line-height: 3em;
 }
 
 #main{
@@ -49,6 +49,9 @@ h1, h2{
     
 
 }
+#postcontainer{
+  margin-bottom: 3em;
+}
 .itemlist{
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -57,6 +60,7 @@ h1, h2{
     font-size: 1.5em;
     list-style-type: none;
     width: 100%;
+
 }
 #new-item{
  
