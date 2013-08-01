@@ -319,7 +319,7 @@ var nectarineApp = angular.module('nectarineApp')
       }
     });
   };
-
+ 
   // get the commit data immediately
   $scope.getCommitData();
   });
