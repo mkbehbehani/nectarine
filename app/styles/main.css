@@ -30,10 +30,7 @@ h1{
  height: 10em;
  line-height: 4em;
 }
-.content{
-    position: absolute;
-    top: 10em;
-}
+
 #main{
 
     margin-left: auto;
@@ -48,7 +45,6 @@ h1{
     padding: 1em;
     font-size: 1.5em;
     list-style-type: none;
-    width: 40em;
 }
 #new-item{
     margin-top: 1em;
